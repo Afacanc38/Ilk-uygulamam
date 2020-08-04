@@ -1,12 +1,16 @@
 ogrenciler = {}
 
+# İlk öğrencimizi kaydedelim. 
+
 print(" ")
 print("1. Öğrenci")
 
-number = input("Öğrenci No: ")
+number = input("Öğrenci No: ") # Öğrencinin sırasıyla bilgilerini kaydedelim.
 name = input("Ad: ")
 surname = input("Soyad: ")
 phone = input("Telefon: ")
+
+# Öğrenciyi kaydedelim.
 
 ogrenciler[number] = {
     "Adı": name,
@@ -44,10 +48,10 @@ ogrenciler[number] = {
 
 
 print(" ")
-ogrenciNo = input("Öğrenci no: ")
+ogrenciNo = input("Öğrenci no: ") # Kaydettiğimiz öğrenciyi sistemde sorgulayalım.
 ogrenci = ogrenciler[ogrenciNo]
 
-print(" ")
+print(" ") # Sorguladığımız öğrenciyi gösterelim
 print("Aradığınız öğrencinin;")
 print(f"Adı: {ogrenci['Adı']}")
 print(f"Soyadı: {ogrenci['Soyadı']}")
